@@ -1,38 +1,120 @@
 .App {
   text-align: center;
+  min-height: 1000px;
+  background: url('https://images.unsplash.com/photo-1577611473531-542453710a08?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.activeLink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav a {
+  color: #ebebeb82;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+nav a:hover {
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  padding: 5px;
+  text-align: start;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 90px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.home {
+  margin-top: 150px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skills {
+  font-size: 20px;
+  color: rgba(196, 196, 196, 0.676);
+}
+
+.contactButton {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+label {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+input {
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.textInput {
+  height: 300px;
+  width: 300px;
+}
+
+textarea {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.planeIcon {
+  margin-left: 50px;
+  margin-right: 10px;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.telegram {
+  display: contents;
 }
